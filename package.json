@@ -30,6 +30,11 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^6.0.2"
+    "@astrojs/tailwind": "^6.0.2",
+    "@types/bun": "latest"
+  },
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }

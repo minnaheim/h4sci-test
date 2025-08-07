@@ -23,6 +23,10 @@
       },
       "devDependencies": {
         "@astrojs/tailwind": "^6.0.2",
+        "@types/bun": "latest",
+      },
+      "peerDependencies": {
+        "typescript": "^5",
       },
     },
   },
