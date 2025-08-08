@@ -42,7 +42,11 @@ jobs:
         with:
           path: .
           node-version: 20 
-          package-manager: npm@latest
+          package-manager: npm
+
+        env:
+          ASTRO_SITE: ${{ steps.pages.outputs.origin }}
+          ASTRO_BASE: ${{ steps.pages.outputs.base_path }}
       # - name: Detect package manager
       #   id: detect-package-manager
       #   run: |
