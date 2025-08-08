@@ -6,6 +6,7 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://minnaheim.github.io/h4sci-test/',
   integrations: [
     tailwind(), 
     icon({
@@ -14,6 +15,5 @@ export default defineConfig({
         'bx': ['*'], // Include all boxicons (for bxl-linkedin)
       },
     })
-  ],
-  site: 'https://h4sci.github.io'
+  ]
 });
