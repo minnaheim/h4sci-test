@@ -37,11 +37,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install, build, and upload your site
-        uses: withastro/action@v3
+        uses: withastro/action@v4
         with:
-          path: .
           node-version: 20 
-          package-manager: npm@latest
+          package-manager: bun@latest
       # - name: Detect package manager
       #   id: detect-package-manager
       #   run: |
@@ -71,6 +70,7 @@ jobs:
       # - name: Install dependencies
       #   run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       #   working-directory: ${{ env.BUILD_PATH }}
+      # TODO: wo astro build in pre-built action? do we need to do this manually?
       # - name: Build with Astro
       #   run: |
       #     ${{ steps.detect-package-manager.outputs.runner }} astro build \
