@@ -6,8 +6,8 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.ASTRO_SITE || 'https://minnaheim.github.io/h4sci-test/',
-  base: process.env.ASTRO_BASE || undefined,
+  site: 'https://minnaheim.github.io',
+  base:  'h4sci-test',
   integrations: [
     tailwind(), 
     icon({

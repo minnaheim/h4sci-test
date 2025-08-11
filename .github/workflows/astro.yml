@@ -33,9 +33,9 @@ jobs:
         with:
           node-version: 20 
           package-manager: bun@latest
-        env:
-          ASTRO_SITE: ${{ steps.pages.outputs.origin }}
-          ASTRO_BASE: ${{ steps.pages.outputs.base_path }}
+        # env:
+        #   ASTRO_SITE: ${{ steps.pages.outputs.origin }}
+        #   ASTRO_BASE: ${{ steps.pages.outputs.base_path }}
 
   deploy:
     needs: build
