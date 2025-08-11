@@ -41,7 +41,7 @@ jobs:
         with:
           path: .
           node-version: 20 
-          package-manager: npm@latest
+          package-manager: bun@latest
       # - name: Detect package manager
       #   id: detect-package-manager
       #   run: |
