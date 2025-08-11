@@ -9,6 +9,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# do we need concurrency?
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -33,9 +38,6 @@ jobs:
         with:
           node-version: 20 
           package-manager: bun@latest
-        # env:
-        #   ASTRO_SITE: ${{ steps.pages.outputs.origin }}
-        #   ASTRO_BASE: ${{ steps.pages.outputs.base_path }}
 
   deploy:
     needs: build
